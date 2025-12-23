@@ -66,3 +66,37 @@ export {
   extractCaseNumbersFromText,
   extractJudgmentDateFromText,
 } from './normalization/index.js';
+
+// Cache
+export {
+  type Cache,
+  type CacheEntry,
+  type CacheConfig,
+  type CacheStats,
+  CacheTTL,
+  MemoryCache,
+  createMemoryCache,
+  RedisCache,
+  createRedisCache,
+  isRedisConfigured,
+  createCache,
+} from './cache/index.js';
+
+// Security
+export {
+  RateLimiter,
+  createRateLimiter,
+  createRateLimiters,
+  RateLimits,
+  type RateLimitConfig,
+  DomainAllowlist,
+  createAllowlist,
+  createDefaultAllowlist,
+  DEFAULT_ALLOWED_DOMAINS,
+  type AllowlistConfig,
+  AuditLogger,
+  createAuditLogger,
+  type AuditLoggerConfig,
+  type AuditEntry,
+  type AuditEventType,
+} from './security/index.js';
