@@ -1,0 +1,51 @@
+{
+  "items": [
+    {
+      "id": 524389,
+      "courtType": "NATIONAL_APPEAL_CHAMBER",
+      "courtCases": [
+        { "caseNumber": "KIO 3177/23" }
+      ],
+      "judgmentType": "SENTENCE",
+      "judgmentDate": "2023-12-15",
+      "judges": [
+        { "name": "Jan Kowalski", "function": "przewodniczący" },
+        { "name": "Anna Nowak" }
+      ],
+      "source": {
+        "code": "KIO",
+        "judgmentUrl": "https://orzeczenia.uzp.gov.pl/Home/PdfContent/524389"
+      },
+      "decision": "uwzględnia odwołanie",
+      "summary": "Zamawiający naruszył art. 226 ust. 1 pkt 5 ustawy Pzp poprzez nieprawidłowe odrzucenie oferty Odwołującego z powodu rażąco niskiej ceny.",
+      "keywords": ["rażąco niska cena", "odrzucenie oferty"]
+    },
+    {
+      "id": 524123,
+      "courtType": "NATIONAL_APPEAL_CHAMBER",
+      "courtCases": [
+        { "caseNumber": "KIO 3100/23" },
+        { "caseNumber": "KIO 3101/23" }
+      ],
+      "judgmentType": "DECISION",
+      "judgmentDate": "2023-12-10",
+      "judges": [
+        { "name": "Maria Wiśniewska" }
+      ],
+      "source": {
+        "code": "KIO"
+      },
+      "decision": "umarza postępowanie",
+      "thesis": "Cofnięcie odwołania przed otwarciem rozprawy skutkuje umorzeniem postępowania odwoławczego."
+    }
+  ],
+  "queryTemplate": {
+    "courtType": "NATIONAL_APPEAL_CHAMBER",
+    "all": "rażąco niska cena"
+  },
+  "info": {
+    "totalResults": 156,
+    "pageSize": 10,
+    "pageNumber": 0
+  }
+}

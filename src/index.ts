@@ -24,3 +24,27 @@ export {
   cacheKey,
   generateRequestId,
 } from './utils/index.js';
+
+// Providers
+export {
+  // Types
+  type Provider,
+  type JudgmentType,
+  type ProviderPreference,
+  type FormatPreference,
+  type NormalizedSearchResult,
+  type NormalizedJudgmentMetadata,
+  type NormalizedJudgmentContent,
+  type SourceLinks,
+  type ContinuationInfo,
+  type SearchParams,
+  type SearchResponse,
+  type JudgmentParams,
+  type JudgmentResponse,
+  type HealthStatus,
+  type KioProvider,
+  // SAOS Provider
+  SaosProvider,
+  createSaosProvider,
+  type SaosProviderConfig,
+} from './providers/index.js';

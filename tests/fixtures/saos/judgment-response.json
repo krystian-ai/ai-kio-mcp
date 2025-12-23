@@ -1,0 +1,57 @@
+{
+  "id": 524389,
+  "courtType": "NATIONAL_APPEAL_CHAMBER",
+  "courtCases": [
+    { "caseNumber": "KIO 3177/23" }
+  ],
+  "judgmentType": "SENTENCE",
+  "judgmentDate": "2023-12-15",
+  "judges": [
+    { "name": "Jan Kowalski", "function": "przewodniczący" },
+    { "name": "Anna Nowak" },
+    { "name": "Piotr Zieliński" }
+  ],
+  "source": {
+    "code": "KIO",
+    "judgmentUrl": "https://orzeczenia.uzp.gov.pl/Home/PdfContent/524389",
+    "publicationDate": "2023-12-20"
+  },
+  "courtReporters": ["Protokolant: Katarzyna Malinowska"],
+  "decision": "uwzględnia odwołanie w całości",
+  "summary": "Izba uwzględniła odwołanie w całości i nakazała Zamawiającemu unieważnienie czynności odrzucenia oferty Odwołującego oraz powtórzenie czynności badania i oceny ofert.",
+  "thesis": "Zamawiający jest zobowiązany do rzetelnego zbadania wyjaśnień wykonawcy dotyczących rażąco niskiej ceny przed podjęciem decyzji o odrzuceniu oferty.",
+  "textContent": "Sygn. akt: KIO 3177/23\n\nWYROK\nz dnia 15 grudnia 2023 r.\n\nKrajowa Izba Odwoławcza w składzie:\nPrzewodniczący: Jan Kowalski\nCzłonkowie: Anna Nowak, Piotr Zieliński\nProtokolant: Katarzyna Malinowska\n\npo rozpoznaniu na rozprawie w dniu 14 grudnia 2023 r. odwołania wniesionego do Prezesa Krajowej Izby Odwoławczej w dniu 1 grudnia 2023 r. przez wykonawcę ABC Sp. z o.o. z siedzibą w Warszawie\n\nw postępowaniu prowadzonym przez Zamawiającego - Urząd Miasta Krakowa\n\norzeka:\n\n1. Uwzględnia odwołanie w całości.\n\n2. Nakazuje Zamawiającemu:\n   a) unieważnienie czynności odrzucenia oferty Odwołującego,\n   b) powtórzenie czynności badania i oceny ofert z uwzględnieniem oferty Odwołującego.\n\n3. Kosztami postępowania obciąża Zamawiającego.\n\nUZASADNIENIE\n\nOdwołujący - ABC Sp. z o.o. z siedzibą w Warszawie wniósł odwołanie od czynności Zamawiającego polegającej na odrzuceniu jego oferty na podstawie art. 226 ust. 1 pkt 8 ustawy z dnia 11 września 2019 r. - Prawo zamówień publicznych (Dz.U. z 2023 r. poz. 1605 ze zm., dalej: ustawa Pzp).\n\nZamawiający prowadzi postępowanie o udzielenie zamówienia publicznego w trybie przetargu nieograniczonego na wykonanie robót budowlanych polegających na budowie hali sportowej.\n\nIzba zważyła, co następuje:\n\nOdwołanie zasługuje na uwzględnienie.\n\nZgodnie z art. 226 ust. 1 pkt 8 ustawy Pzp zamawiający odrzuca ofertę, jeżeli zawiera rażąco niską cenę lub koszt w stosunku do przedmiotu zamówienia. Jednakże przed podjęciem decyzji o odrzuceniu oferty zamawiający jest zobowiązany wezwać wykonawcę do złożenia wyjaśnień, w tym złożenia dowodów w zakresie wyliczenia ceny lub kosztu, lub ich istotnych części składowych (art. 224 ust. 1 ustawy Pzp).\n\nW przedmiotowej sprawie Zamawiający wprawdzie wezwał Odwołującego do złożenia wyjaśnień, jednak analiza tych wyjaśnień przez Zamawiającego była nierzetelna i pobieżna. Zamawiający nie odniósł się do przedstawionych przez Odwołującego kalkulacji i dowodów, poprzestając na ogólnym stwierdzeniu, że wyjaśnienia \"nie są przekonujące\".\n\nIzba uznała, że Zamawiający naruszył art. 226 ust. 1 pkt 8 w zw. z art. 224 ust. 6 ustawy Pzp poprzez przedwczesne odrzucenie oferty Odwołującego bez należytego zbadania złożonych wyjaśnień.\n\nW tym stanie rzeczy Izba orzekła jak w sentencji.\n\nO kosztach postępowania orzeczono stosownie do wyniku sprawy na podstawie art. 575 ustawy Pzp.",
+  "referencedRegulations": [
+    {
+      "journalTitle": "Prawo zamówień publicznych",
+      "journalYear": 2019,
+      "text": "Art. 226 ust. 1 pkt 8"
+    },
+    {
+      "journalTitle": "Prawo zamówień publicznych",
+      "journalYear": 2019,
+      "text": "Art. 224 ust. 1"
+    },
+    {
+      "journalTitle": "Prawo zamówień publicznych",
+      "journalYear": 2019,
+      "text": "Art. 224 ust. 6"
+    },
+    {
+      "journalTitle": "Prawo zamówień publicznych",
+      "journalYear": 2019,
+      "text": "Art. 575"
+    }
+  ],
+  "keywords": [
+    "rażąco niska cena",
+    "odrzucenie oferty",
+    "wyjaśnienia wykonawcy",
+    "przetarg nieograniczony"
+  ],
+  "legalBases": [
+    "Art. 226 ust. 1 pkt 8 ustawy Pzp",
+    "Art. 224 ust. 1 ustawy Pzp",
+    "Art. 224 ust. 6 ustawy Pzp"
+  ]
+}
