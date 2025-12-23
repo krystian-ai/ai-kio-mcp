@@ -47,4 +47,22 @@ export {
   SaosProvider,
   createSaosProvider,
   type SaosProviderConfig,
+  // UZP Provider
+  UzpProvider,
+  createUzpProvider,
+  type UzpProviderConfig,
 } from './providers/index.js';
+
+// Normalization
+export {
+  extractTextFromHtml,
+  decodeHtmlEntities,
+  normalizeWhitespace,
+  extractTitle,
+  extractMetaDescription,
+  paginateContent,
+  normalizeHtmlContent,
+  mergeMetadata,
+  extractCaseNumbersFromText,
+  extractJudgmentDateFromText,
+} from './normalization/index.js';

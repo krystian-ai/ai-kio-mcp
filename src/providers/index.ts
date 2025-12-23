@@ -11,3 +11,10 @@ export {
   createSaosProvider,
   type SaosProviderConfig,
 } from './saos/index.js';
+
+// UZP Provider
+export {
+  UzpProvider,
+  createUzpProvider,
+  type UzpProviderConfig,
+} from './uzp/index.js';
