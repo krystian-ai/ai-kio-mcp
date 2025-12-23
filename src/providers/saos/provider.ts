@@ -23,7 +23,12 @@ import {
 } from './mapper.js';
 import { NotFoundError, ProviderError } from '../../utils/errors.js';
 
-export interface SaosProviderConfig extends SaosClientConfig {}
+export interface SaosProviderConfig extends Partial<SaosClientConfig> {}
+
+const DEFAULT_SAOS_CONFIG: SaosClientConfig = {
+  baseUrl: 'https://www.saos.org.pl/api',
+  timeoutMs: 30000,
+};
 
 /**
  * SAOS Provider for KIO judgments
@@ -33,9 +38,13 @@ export class SaosProvider implements KioProvider {
   private readonly client: SaosClient;
   private readonly baseUrl: string;
 
-  constructor(config: SaosProviderConfig) {
-    this.client = createSaosClient(config);
-    this.baseUrl = config.baseUrl;
+  constructor(config: SaosProviderConfig = {}) {
+    const fullConfig: SaosClientConfig = {
+      ...DEFAULT_SAOS_CONFIG,
+      ...config,
+    };
+    this.client = createSaosClient(fullConfig);
+    this.baseUrl = fullConfig.baseUrl;
   }
 
   /**
@@ -209,6 +218,6 @@ export class SaosProvider implements KioProvider {
 /**
  * Create a SAOS provider instance
  */
-export function createSaosProvider(config: SaosProviderConfig): SaosProvider {
+export function createSaosProvider(config: SaosProviderConfig = {}): SaosProvider {
   return new SaosProvider(config);
 }
