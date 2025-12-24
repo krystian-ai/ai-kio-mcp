@@ -1,0 +1,60 @@
+{
+  "description": "Sample search results for testing",
+  "fixtures": [
+    {
+      "name": "basic_search_response",
+      "input": {
+        "query": "zamówienia publiczne",
+        "limit": 5,
+        "page": 1
+      },
+      "expected": {
+        "results_count_min": 1,
+        "results_count_max": 5,
+        "has_pagination": true
+      }
+    },
+    {
+      "name": "case_number_search",
+      "input": {
+        "case_number": "KIO 123/23"
+      },
+      "expected": {
+        "results_count_min": 0,
+        "results_count_max": 10
+      }
+    },
+    {
+      "name": "date_range_search",
+      "input": {
+        "query": "odwołanie",
+        "date_from": "2023-01-01",
+        "date_to": "2023-12-31",
+        "limit": 10
+      },
+      "expected": {
+        "all_dates_in_range": true
+      }
+    },
+    {
+      "name": "judgment_type_filter",
+      "input": {
+        "query": "przetarg",
+        "judgment_type": "SENTENCE",
+        "limit": 5
+      },
+      "expected": {
+        "all_types_match": true
+      }
+    },
+    {
+      "name": "empty_results",
+      "input": {
+        "query": "xyznonexistentquery123"
+      },
+      "expected": {
+        "results_count": 0
+      }
+    }
+  ]
+}

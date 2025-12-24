@@ -1,0 +1,37 @@
+{
+  "description": "Sample judgment data for testing",
+  "fixtures": [
+    {
+      "name": "basic_judgment",
+      "provider": "saos",
+      "metadata": {
+        "caseNumbers": ["KIO 2611/21"],
+        "judgmentDate": "2021-11-15",
+        "judgmentType": "SENTENCE",
+        "decision": "Uwzględniono odwołanie",
+        "legalBases": ["Art. 226 ust. 1 pkt 5 Pzp", "Art. 89 ust. 1 pkt 4 Pzp"],
+        "judges": ["Jan Kowalski - przewodniczący", "Anna Nowak", "Piotr Wiśniewski"],
+        "keywords": ["zamówienia publiczne", "wykluczenie wykonawcy", "wadium"],
+        "courtName": "Krajowa Izba Odwoławcza"
+      },
+      "content": {
+        "text_length_min": 1000,
+        "has_html_url": true
+      }
+    },
+    {
+      "name": "resolution_judgment",
+      "provider": "saos",
+      "metadata": {
+        "judgmentType": "RESOLUTION"
+      }
+    },
+    {
+      "name": "decision_judgment",
+      "provider": "saos",
+      "metadata": {
+        "judgmentType": "DECISION"
+      }
+    }
+  ]
+}

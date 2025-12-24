@@ -1,0 +1,85 @@
+{
+  "description": "Validation test cases for schemas",
+  "search_input": {
+    "valid": [
+      { "query": "test query" },
+      { "case_number": "KIO 123/23" },
+      { "query": "test", "limit": 50, "page": 2 },
+      { "query": "test", "date_from": "2023-01-01", "date_to": "2023-12-31" },
+      { "query": "test", "judgment_type": "SENTENCE" },
+      { "query": "test", "provider": "saos" },
+      { "query": "test", "provider": "uzp" },
+      { "query": "test", "provider": "auto" },
+      { "case_number": "KIO123/23" },
+      { "case_number": "kio 456/2024" }
+    ],
+    "invalid": [
+      {},
+      { "query": "" },
+      { "limit": 0 },
+      { "limit": 101 },
+      { "page": 0 },
+      { "date_from": "2023/01/01" },
+      { "date_from": "01-01-2023" },
+      { "case_number": "123/23" },
+      { "case_number": "ABC 123/23" },
+      { "judgment_type": "RULING" },
+      { "provider": "other" }
+    ]
+  },
+  "judgment_input": {
+    "valid": [
+      { "provider": "saos", "provider_id": "123" },
+      { "provider": "uzp", "provider_id": "abc-123" },
+      { "provider": "saos", "provider_id": "123", "format_preference": "text" },
+      { "provider": "saos", "provider_id": "123", "format_preference": "html" },
+      { "provider": "saos", "provider_id": "123", "max_chars": 50000 },
+      { "provider": "saos", "provider_id": "123", "offset_chars": 10000 }
+    ],
+    "invalid": [
+      {},
+      { "provider": "saos" },
+      { "provider_id": "123" },
+      { "provider": "saos", "provider_id": "" },
+      { "provider": "invalid", "provider_id": "123" },
+      { "provider": "saos", "provider_id": "123", "max_chars": 100 },
+      { "provider": "saos", "provider_id": "123", "max_chars": 200000 },
+      { "provider": "saos", "provider_id": "123", "offset_chars": -1 }
+    ]
+  },
+  "date_strings": {
+    "valid": [
+      "2023-01-01",
+      "2024-12-31",
+      "2020-06-15",
+      "1999-01-01"
+    ],
+    "invalid": [
+      "2023/01/01",
+      "01-01-2023",
+      "2023-1-1",
+      "2023-13-01",
+      "2023-01-32",
+      "not-a-date",
+      "20230101"
+    ]
+  },
+  "case_numbers": {
+    "valid": [
+      "KIO 123/23",
+      "KIO 123/2023",
+      "kio 456/24",
+      "KIO123/23",
+      "KIO 1/24",
+      "KIO 9999/2024"
+    ],
+    "invalid": [
+      "123/23",
+      "ABC 123/23",
+      "KIO 123",
+      "KIO/23",
+      "KIO 123/2",
+      "KIO123"
+    ]
+  }
+}
