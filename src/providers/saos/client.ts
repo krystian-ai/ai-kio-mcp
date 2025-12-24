@@ -80,10 +80,11 @@ export class SaosClient {
   /**
    * Get a specific judgment by ID
    * GET /api/judgments/{id}
+   * Note: SAOS wraps judgment responses in {data, links}
    */
   async getJudgment(id: number): Promise<SaosJudgmentResponse> {
-    const response = await this.http.get<SaosJudgmentResponse>(`/api/judgments/${id}`);
-    return response.data;
+    const response = await this.http.get<{ data: SaosJudgmentResponse }>(`/api/judgments/${id}`);
+    return response.data.data;
   }
 
   /**

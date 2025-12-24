@@ -127,7 +127,7 @@ describe('SaosProvider', () => {
         ok: true,
         status: 200,
         headers: new Headers(),
-        json: async () => judgmentFixture,
+        json: async () => ({ data: judgmentFixture }),
       });
 
       const result = await provider.getJudgment({
@@ -150,7 +150,7 @@ describe('SaosProvider', () => {
         ok: true,
         status: 200,
         headers: new Headers(),
-        json: async () => judgmentFixture,
+        json: async () => ({ data: judgmentFixture }),
       });
 
       const result = await provider.getJudgment({
@@ -181,8 +181,10 @@ describe('SaosProvider', () => {
         status: 200,
         headers: new Headers(),
         json: async () => ({
-          ...judgmentFixture,
-          courtType: 'COMMON', // Not KIO
+          data: {
+            ...judgmentFixture,
+            courtType: 'COMMON', // Not KIO
+          },
         }),
       });
 
@@ -201,7 +203,7 @@ describe('SaosProvider', () => {
         ok: true,
         status: 200,
         headers: new Headers(),
-        json: async () => judgmentFixture,
+        json: async () => ({ data: judgmentFixture }),
       });
 
       const result = await provider.getJudgment({
