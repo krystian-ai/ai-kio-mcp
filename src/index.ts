@@ -4,6 +4,78 @@
  * Main library export
  */
 
+// Server
+export {
+  createKioServer,
+  getServerInfo,
+  registerKioTools,
+  getToolDefinitions,
+  type KioServerConfig,
+  type KioMcpServer,
+} from './server/index.js';
+
+// Tools
+export {
+  createToolContext,
+  closeToolContext,
+  executeKioSearch,
+  executeKioGetJudgment,
+  executeKioGetSourceLinks,
+  executeKioHealth,
+  type ToolContext,
+  type ToolContextConfig,
+  type ToolResult,
+  type ToolError,
+  type ToolResponse,
+} from './tools/index.js';
+
+// Schemas
+export {
+  // Common schemas
+  ProviderSchema,
+  ProviderPreferenceSchema,
+  JudgmentTypeSchema,
+  FormatPreferenceSchema,
+  DateStringSchema,
+  CaseNumberSchema,
+  LimitSchema,
+  PageSchema,
+  MaxCharsSchema,
+  OffsetCharsSchema,
+  ContinuationInfoSchema,
+  SourceLinksSchema,
+  ErrorResponseSchema,
+  // Search schemas
+  KioSearchInputSchema,
+  SearchResultItemSchema,
+  KioSearchOutputSchema,
+  // Judgment schemas
+  KioGetJudgmentInputSchema,
+  JudgmentMetadataSchema,
+  JudgmentContentSchema,
+  KioGetJudgmentOutputSchema,
+  // Source links schemas
+  KioGetSourceLinksInputSchema,
+  KioGetSourceLinksOutputSchema,
+  // Health schemas
+  ProviderHealthStatusSchema,
+  KioHealthInputSchema,
+  KioHealthOutputSchema,
+  // Type exports
+  type KioSearchInput,
+  type SearchResultItem,
+  type KioSearchOutput,
+  type KioGetJudgmentInput,
+  type JudgmentMetadata,
+  type JudgmentContent,
+  type KioGetJudgmentOutput,
+  type KioGetSourceLinksInput,
+  type KioGetSourceLinksOutput,
+  type ProviderHealthStatus,
+  type KioHealthInput,
+  type KioHealthOutput,
+} from './schemas/index.js';
+
 // Configuration
 export { loadConfig, ConfigError, defaults } from './config/index.js';
 export type { KioConfig, LogLevel, CacheType } from './config/index.js';
