@@ -91,7 +91,8 @@ export class AuditLogger {
       ...(entry.errorMessage && { error: entry.errorMessage }),
     };
 
-    console.log(JSON.stringify(logData));
+    // Use stderr to avoid interfering with stdio MCP protocol
+    console.error(JSON.stringify(logData));
   }
 
   /**
