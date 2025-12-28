@@ -37,3 +37,10 @@ coverage/
 tmp/
 temp/
 *.tmp
+
+# Private / Internal
+.serena/
+.claude/
+PRD_mcp-kio.md
+docs/sessions/
+docs/mcp-kio-feature-improvement/
