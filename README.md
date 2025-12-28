@@ -168,4 +168,9 @@ npx @modelcontextprotocol/inspector node dist/stdio.js
 
 ## License
 
-MIT
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### Attribution
+
+This project is created by **Krystian AI** (krystian@toskk.pl).
+If you use this source code or the idea in your own projects, please provide attribution by linking back to this repository and mentioning the author.
